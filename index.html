@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="countdown-wrapper">
+            <div class="title">
+                <h1>Countdown</h1>
+            </div>
+
+            <div class="counter">
+                <div class="count">
+                    <h1 id="day">00</h1>
+                    <p>days</p>
+                </div>
+
+                <div class="count">
+                    <h1 id="hour">00</h1>
+                    <p>hours</p>
+                </div>
+
+                <div class="count">
+                    <h1 id="minute">00</h1>
+                    <p>minutes</p>
+                </div>
+
+                <div class="count">
+                    <h1 id="second">00</h1>
+                    <p>seconds</p>
+                </div>
+
+            </div>
+
+            <div class="input-field">
+                <input type="number" placeholder="Days" class="days">
+                <input type="number" placeholder="Hours" class="hours">
+                <input type="number" placeholder="Minutes" class="minutes">
+                <input type="number" placeholder="Seconds" class="seconds">
+            </div>
+
+            <div class="button">
+                <button onclick="countDown()" class="btn">Start</button>
+                <button onclick="deleteMusic()" class="btn-music">
+                    <i class='ti-control-pause'></i>
+                </button>
+            </div>    
+            
+            <audio src='./music/music1.mp3' class='audio'></audio>
+        </div>
+    </div>
+    <script src="style.js"></script>
+</body>
+</html>
